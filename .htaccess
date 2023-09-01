@@ -1,0 +1,21 @@
+RewriteEngine  on
+Options All -Indexes
+
+#Router WWW REDIRECT 
+#RewriteCond %(HTTP_HOST) !^www\.[NC]
+#RewriteRule ^https://www.%{HTTP_HOST}%{REQUEST_URI}[L,R=301]
+
+#ROUTER HTTPS REDIRECT
+#RewriteCond%{HTTPS:X-Forwarded-Proto} !https
+#RewriteCond%{HTTPS} off
+#RewriteRule ~https://www.%{HTTP_HOST}%{REQUEST_URI}[L,R=301]
+
+#Router URL Rewrite -Navegação
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1
+
+<Files 403.shtml>
+ORDER allow,deny
+allow from all
+</Files>
