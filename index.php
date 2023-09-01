@@ -1,5 +1,5 @@
 <?php
-    $configBase = 'http://localhost/plataforma/';
+    require "Core/Config.php";
 ?>
 
 
@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $titleSite ?></title>
+    <title><?=  $titleSite ?></title>
     <meta http-equiv="X-UA Compatible" content="IE=edge">
     <meta name="robots" content="index, follow">
     <meta name="description" content="">
@@ -39,9 +39,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- FONTS GOOGLE -->
-    <link rel="proconnect" href="https://fonts_googleapis.com">
-    <link rel="proconnect" href="https://fonts_gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts_googleapis/css2?family=Nunito:wght@300:500&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap" rel="stylesheet">
 
     <!-- CSS NATIVE -->
     <link rel="stylesheet" href="<?= $configBase ?>Views/Css/Views.css">

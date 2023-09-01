@@ -4,15 +4,15 @@
     session_start();
 
     //Configuração da data e hora do servidor
-    date_default_timezone_set('America/São Paulo');
-
+    date_default_timezone_set('America/Sao_paulo');
+    // date_default_timezone_get('America/Sao Paulo');
     //Configurções do site
     $configBase = 'http://localhost/plataforma';
     $imageSite = 'default.png';
     $titleSite = 'Store Masters';
     $description = 'Loja para teste de e-commerce';
     $mailSite = 'contato@email.com';
-    $phoneSite = '+55(61)123456789';
+    $phoneSite = '+5561123456789';
     $statusSite = 1; // [0] = Off line / [1] = On line / [2] = Em manutenção
     $hellobar = 0; //[0] = Desativado / [1] = Ativado
 
@@ -20,7 +20,7 @@
     //Configuarções do Author
     $nameAuthor = 'Franklin Da KLYK / WEB-SITES';
     $mailAuthor = "mail@email.com";
-    $phoneAuthor = '55 61 993688275';
+    $phoneAuthor = '5561993688275';
 
 
     //Navegação Dinamica do Site

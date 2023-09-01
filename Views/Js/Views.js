@@ -10,12 +10,12 @@ $(document).ready(function(){
         $(".modal").fadeOut(400);
     });
 
-    //FECHA NOTIFICAÇÕES
+    //ABRIR NOTIFICAÇÕES
     $(".open_notification").click(function(){
         $(".notification-container").fadeIn(400);
         $(".notification-container").css("display", "flex");
     });
-    //FECHA MODAL
+    //FECHA NOTIFICAÇÕES
     $(".notification-close").click(function(){
         $(".notification-container").fadeOut(400);
     });
@@ -23,7 +23,7 @@ $(document).ready(function(){
     //CEP AUTOMÁTICO - REPÚBLICA VIRTUAL
    $('.zipcode').blur(function(e){
        if($.trim($('.zipcode').val())){
-            $.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+$('.zipcode').val(),function(){
+            $.getScript('http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep='+$('.zipcode').val(),function(){
                if(resultadoCEP["resultado"]){
                     $(".address").val(unescape(resultadoCEP["tipo_logradouro"]) + " "+ unescape(resultadoCEP["logradouro"]));
                     $(".neighborhood").val(unescape(resultadoCEP["bairro"]));
