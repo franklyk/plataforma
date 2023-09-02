@@ -1,1 +1,3 @@
-home-loja
+<?php
+    include "header.php";
+?>
