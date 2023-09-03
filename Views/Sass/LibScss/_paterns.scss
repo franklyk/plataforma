@@ -27,6 +27,7 @@
     margin: 0;
     outline: none;
     padding: 0;
+    transition: .1s linear;
     -moz-border-sizing: border-box;
     -webkit-border-sizing: border-box;
     -moz-border-sizing: border-box;
@@ -44,6 +45,9 @@ body{
 a{
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
 input{
     outline: none;
 }
@@ -53,9 +57,7 @@ button{
 ul, li {
     list-style: none;
 }
-img{
-    width: 100%;
-}
+
 /* Classes Gerais */
 .clear{
     clear: both;
@@ -75,7 +77,6 @@ img{
 .bgcolor-red-dark{
     background: $dark;
 }
-
 .bgcolor-blue{
     background: $blue;
 }
@@ -95,7 +96,6 @@ img{
 .bgcolor-orange{
     background: $orange;
 }
-
 .bgcolor-white{
     background: $white;
 }
@@ -163,14 +163,11 @@ img{
 .font-text-max{
     font-size: 2rem;
 }
-
-
 @media(max-width: 900px){
     .font-text-max{
         font-size: 1.8rem;
     }
 }
-
 @media(max-width: 600px){
     .font-text-sub{
         font-size: 0.7rem;
@@ -188,8 +185,6 @@ img{
         font-size: 1.6rem;
     }
 }
-
-
 /* Estilo da Fonte */
 .font-weight-min{
     font-weight: 300;
@@ -200,8 +195,6 @@ img{
 .font-weight-max{
     font-weight: 900;
 }
-
-
 /* Alinhamentos de Texto */
 .text-center{
     text-align: center;
@@ -215,8 +208,6 @@ img{
 .text-justify{
     text-align: justify;
 }
-
-
 @media(max-width: 600px){
     .text-center{
         text-align: center;
@@ -231,8 +222,6 @@ img{
         text-align: center;
     }
 }
-
-
 /* Botões e Cores */
 .btn_edit{
     background: $green;
@@ -298,7 +287,7 @@ img{
     float: left;
     height: auto;
     margin: 10px 0 10px 1.1%;
-    /* width: 31.9%; */
+    width: 31.9%; 
 }
 .divisor4{
     float: left;

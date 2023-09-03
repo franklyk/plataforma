@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Padrões de Cores */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -31,6 +30,7 @@
   margin: 0;
   outline: none;
   padding: 0;
+  transition: 0.1s linear;
   -moz-border-sizing: border-box;
   -webkit-border-sizing: border-box;
   -moz-border-sizing: border-box;
@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 input {
   outline: none;
 }
@@ -62,10 +66,6 @@ button {
 
 ul, li {
   list-style: none;
-}
-
-img {
-  width: 100%;
 }
 
 /* Classes Gerais */
@@ -347,7 +347,7 @@ img {
   float: left;
   height: auto;
   margin: 10px 0 10px 1.1%;
-  /* width: 31.9%; */
+  width: 31.9%;
 }
 
 .divisor4 {
@@ -603,6 +603,96 @@ button.status-close-button {
   width: 240px;
 }
 
-/* Padrões de Cores */
+/*header*/
+.header_bg {
+  background: #f2f2f2;
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+.header_bg .header_top {
+  font-size: 0.8rem;
+  margin: 0 10%;
+  padding: 4px 0;
+  width: 80%;
+}
+.header_bg .header_top .divisor2 a {
+  margin-right: 5px;
+}
+.header_bg .header_main {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  font-size: 0.8rem;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 0 10%;
+  width: 80%;
+}
+.header_bg .header_main .logo {
+  width: 200px;
+}
+.header_bg .header_main .frm_search {
+  display: flex;
+  gap: 10px;
+  width: 80%;
+}
+.header_bg .header_main .frm_search .input_search {
+  background: #f2f2f2;
+  float: right;
+  margin: 0;
+  padding: 10px 20px;
+  width: 90%;
+}
+.header_bg .header_main .frm_search .btn_form {
+  display: block;
+  width: 10%;
+}
+.header_bg .header_main .contact_mail {
+  padding: 0 30px;
+  width: auto;
+}
+.header_bg .header_footer {
+  background: #fff;
+  font-size: 0.8rem;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+.header_bg .header_footer ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 10%;
+  padding: 5px 10px;
+  width: 80%;
+}
+.header_bg .header_footer ul a {
+  color: #b0acac;
+  padding: 5px 10px;
+}
+.header_bg .header_footer ul a:hover {
+  background: #b0acac;
+  color: #fff;
+  transform: scale(1.09);
+}
+.header_bg .header_footer ul a li {
+  display: inline-block;
+}
+.header_bg .header_footer ul a li span {
+  background: #8c8989;
+  border-radius: 50%;
+  color: #fff;
+  margin-top: -10px;
+  margin-left: 7px;
+  padding: 2px 2px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.header_bg .header_footer ul a li:hover {
+  background: #b0acac;
+  color: #fff;
+  transform: scale(1.09);
+}
 
 /*# sourceMappingURL=Views.css.map */
