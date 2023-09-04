@@ -8,9 +8,9 @@
 <body>
     <div class="container_top">
         <div class="container_top_info">
-            <ul>
+            <ul class="container_list">
                 <li>
-                    <p class="text-center font-text-max">
+                    <p class="font-text-max ">
                         <i class="fa fa-truck"></i>
                     </p>
                     <p class="text-center font-text-sub font-weight-medium">Frete Gratuito</p>
@@ -44,7 +44,7 @@
             </ul>
             <div class="clear"></div>
         </div>
-        <h1 class="font-text-medium font-weight-medium text-left m-text-center">Mais vendidos da semana:</h1>
+        <h1 class="font-text-medium font-weight-medium m-text-center">Mais vendidos da semana:</h1>
         <div class="container_top_info">
             <ul class="caroussel">
                 <?php for($i=0; $i < 2; $i++): ?>
@@ -53,19 +53,19 @@
                             <p class="text-left font-weight-medium price_discount radius">10% OFF</p>
                             <img src="<?= $configBase ?>Images/Products/product.png" title="Imagem do produto: Tênis Adidas Sporting" alt="Imagem do produto: Tênis Adidas Sporting">
                         </div>
-                        <div class="divisor2">
+                        <div class="divisor2 product_desciption">
 
                             <h2 class="text-left m-text-center font-weight-medium font-text-min">Tênis Adidas Sporting</h2>
 
                             <p class="text-left m-text-center font-weight-min">
 
-                                <span class="price_old radius font-text-sub"><s> R$ 450,00</s></span>
+                                <span class="price_old radius font-text-sub price_discount"><s> R$ 450,00</s></span>
 
-                                <span class="price_off radius font-text-medium font-weight-medium"> R$ 320,00</span>
+                                <span class="price_off radius font-text-medium font-weight-medium new_price"> R$ 320,00</span>
 
                             </p>
 
-                            <p class="text-left m-text-center font-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam iste facere aperiam labore distinctio nemo aspernatur.</p>
+                            <p class="text-left m-text-center font-text-sub description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam iste facere aperiam labore distinctio nemo aspernatur.</p>
 
                             <p class="text-center font-weight-min font-text-sub actions">
 
