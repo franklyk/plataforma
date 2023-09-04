@@ -8,36 +8,30 @@
 <body>
     <header class="header_bg">
         <div class="header_top">
-            <div class="divisor2">
-                <p class="text-left ">
-                    <i class="fa fa-truck"></i> Entregamos em todo o Brasil!
-                </p>
-            </div>
-            <div class="divisor2 text-right" >
-                <p class="text-right">
-                    <a href="#" title="Acesse o Facebook da Loja" class=" radius btn_off">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" title="Acesse o Instagram da Loja" class="radius btn_off">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" title="Acesse o Twitter da Loja" class="radius btn_off">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" title="Acesse o WatsApp da Loja" class="radius btn_off">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="mailto: <?= $mailSite ?>" title="Acesse o E-mail da Loja" class="radius btn_off">
-                        <i class="fa fa-envelope"></i> 
-                    </a>
-                    <a href=" <?= $configBase ?>login " title=" Faça o login e acesse seus pedidos! " class="radius btn_off">
-                        <i class=" fa fa-unlock "></i>
-                    </a>
-                </p>
-            </div>
-                
-            <div class="clear"></div>
-            </div>
+            <p class="truck">
+                <i class="fa fa-truck"></i> Entregamos em todo o Brasil!
+            </p>
+
+            <p class="socials">
+                <a href="#" title="Acesse o Facebook da Loja" class=" radius ">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" title="Acesse o Instagram da Loja" class="radius">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" title="Acesse o Twitter da Loja" class="radius ">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" title="Acesse o WatsApp da Loja" class="radius ">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto: <?= $mailSite ?>" title="Acesse o E-mail da Loja" class="radius">
+                    <i class="fa fa-envelope"></i> 
+                </a>
+                <a href=" <?= $configBase ?>login " title=" Faça o login e acesse seus pedidos! " class="radius">
+                    <i class=" fa fa-unlock "></i>
+                </a>
+            </p>
         </div>
         <div class="header_main radius">
             <div class="logo">
@@ -53,12 +47,12 @@
                     </button>
             </form>
             <div class="contact_mail">
-                <p class="text-center">
+                <p class="text-center mail">
                     <i class="fa fa-envelope"></i>
                     <?= $mailSite ?>
 
                 </p>
-                <p class="text-center">
+                <p class="text-center phone">
                     <i class="fa fa-phone"></i>
                     <?= $phoneSite ?>
                 </p>

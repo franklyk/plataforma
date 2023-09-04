@@ -607,17 +607,32 @@ button.status-close-button {
 .header_bg {
   background: #f2f2f2;
   height: auto;
-  margin: 0;
   width: 100%;
 }
 .header_bg .header_top {
-  font-size: 0.8rem;
-  margin: 0 10%;
-  padding: 4px 0;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin: auto;
   width: 80%;
 }
-.header_bg .header_top .divisor2 a {
-  margin-right: 5px;
+.header_bg .header_top .truck {
+  padding: 5px;
+}
+.header_bg .header_top .socials {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+.header_bg .header_top .socials a {
+  background: #b0acac;
+  color: #fff;
+  margin: 0 5px;
+  padding: 10px;
+}
+.header_bg .header_top .socials a i {
+  padding: 1px 0;
 }
 .header_bg .header_main {
   align-items: center;
@@ -625,8 +640,7 @@ button.status-close-button {
   display: flex;
   font-size: 0.8rem;
   gap: 20px;
-  justify-content: space-between;
-  margin: 0 10%;
+  margin: 0 auto;
   width: 80%;
 }
 .header_bg .header_main .logo {
@@ -693,6 +707,147 @@ button.status-close-button {
   background: #b0acac;
   color: #fff;
   transform: scale(1.09);
+}
+
+.container_top {
+  margin: 30px 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  /*header*/
+  .header_bg .header_main {
+    gap: 5px;
+    width: 95%;
+  }
+  .header_bg .header_footer {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 660px) {
+  /*header*/
+  .header_bg .header_top {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .header_bg .header_top .truck {
+    padding: 5px;
+    width: 100%;
+  }
+  .header_bg .header_top .socials {
+    display: block;
+  }
+  .header_bg .header_top .socials a {
+    margin: 0 5px;
+    padding: 10px;
+  }
+  .header_bg .header_main {
+    display: block;
+    font-size: 0.7rem;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .header_bg .header_main .logo {
+    text-align: center;
+    width: 100%;
+  }
+  .header_bg .header_main .logo img {
+    margin: 10px auto;
+  }
+  .header_bg .header_main .frm_search {
+    display: flex;
+    gap: 10px;
+    margin: 10px auto;
+    width: 100%;
+  }
+  .header_bg .header_main .frm_search .input_search {
+    background: #f2f2f2;
+    float: right;
+    margin: 0 1px 0 5px;
+    padding: 10px 20px;
+    width: 90%;
+  }
+  .header_bg .header_main .frm_search .btn_form {
+    display: block;
+    margin: 0 5px 0 1px;
+    width: 10%;
+  }
+  .header_bg .header_main .contact_mail {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+  .header_bg .header_main .contact_mail .mail, .header_bg .header_main .contact_mail .phone {
+    margin: 10px 0 0 0;
+  }
+  .header_bg .header_footer {
+    background: #fff;
+    font-size: 0.8rem;
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+  .header_bg .header_footer ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    padding: 5px 10px;
+    width: 80%;
+  }
+  .header_bg .header_footer ul a {
+    color: #b0acac;
+    padding: 5px 10px;
+  }
+  .header_bg .header_footer ul a:hover {
+    background: #b0acac;
+    color: #fff;
+    transform: scale(1.09);
+  }
+  .header_bg .header_footer ul a li {
+    display: inline-block;
+  }
+  .header_bg .header_footer ul a li span {
+    background: #8c8989;
+    border-radius: 50%;
+    color: #fff;
+    margin-top: -10px;
+    margin-left: 7px;
+    padding: 2px 2px;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+  .header_bg .header_footer ul a li:hover {
+    background: #b0acac;
+    color: #fff;
+    transform: scale(1.09);
+  }
+}
+@media (max-width: 500px) {
+  /*header*/
+  .header_bg {
+    padding-top: 20px;
+  }
+  .header_bg .header_main {
+    width: 95%;
+  }
+  .header_bg .header_main .frm_search {
+    flex-direction: column;
+  }
+  .header_bg .header_main .frm_search .input_search {
+    margin: auto;
+    width: 95%;
+  }
+  .header_bg .header_main .frm_search .btn_form {
+    display: block;
+    margin: auto;
+    width: 95%;
+  }
+  .header_bg .header_footer ul {
+    flex-direction: column;
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=Views.css.map */
