@@ -7,7 +7,7 @@
     date_default_timezone_set('America/Sao_paulo');
     // date_default_timezone_get('America/Sao Paulo');
     //Configurções do site
-    $configBase = 'http://localhost/plataforma';
+    $configBase = 'http://localhost/plataforma/';
     $imageSite = 'default.png';
     $titleSite = 'Store Masters';
     $description = 'Loja para teste de e-commerce';
