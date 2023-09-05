@@ -44,18 +44,18 @@
             </ul>
             <div class="clear"></div>
         </div>
-        <h1 class="font-text-medium font-weight-medium m-text-center">Mais vendidos da semana:</h1>
+        <h1 class="font-text-medium font-weight-medium">Mais vendidos da semana:</h1>
         <div class="container_top_info">
             <ul class="caroussel">
-                <?php for($i=0; $i < 2; $i++): ?>
+                <?php for($i=0; $i < 6; $i++): ?>
                     <li class="img-caroussel">
                         <div class="divisor2">
-                            <p class="text-left font-weight-medium price_discount radius">10% OFF</p>
+                            <p class="font-weight-medium price_discount radius">10% OFF</p>
                             <img src="<?= $configBase ?>Images/Products/product.png" title="Imagem do produto: Tênis Adidas Sporting" alt="Imagem do produto: Tênis Adidas Sporting">
                         </div>
                         <div class="divisor2 product_desciption">
 
-                            <h2 class="text-left m-text-center font-weight-medium font-text-min">Tênis Adidas Sporting</h2>
+                            <h2 class=" m-text-center font-weight-medium font-text-min">Tênis Adidas Sporting</h2>
 
                             <p class="text-left m-text-center font-weight-min">
 
@@ -81,7 +81,6 @@
                         </div>
                     </li>
                 <?php endfor; ?>
-                <div class="clear"></div>
             </ul>
             <div class="clear"></div>
         </div>

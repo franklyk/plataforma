@@ -13,6 +13,7 @@
     $description = 'Loja para teste de e-commerce';
     $mailSite = 'contato@email.com';
     $phoneSite = '+5561123456789';
+    $whatsappSite = '+5561123456789';
     $statusSite = 1; // [0] = Off line / [1] = On line / [2] = Em manutenção
     $hellobar = 0; //[0] = Desativado / [1] = Ativado
 

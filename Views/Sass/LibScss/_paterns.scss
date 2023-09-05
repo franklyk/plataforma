@@ -10,13 +10,13 @@
     }
 }
 ::-webkit-scrollbar-thumb{
-    background: #00272C;
-    border: 1px solid #000052f6;
+    background: #f2f2f2;
+    border: 1px solid #9b9b9ef6;
     border-radius: 1px;
     cursor: pointer;
     width: 10px;
     &:hover{
-        background: #000000b9;
+        background: #8d8b8b88;
     }
 }
 /* Reset */

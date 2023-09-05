@@ -4,9 +4,12 @@
 	/// Breakpoints.
 	///  @var {list}
 	$breakpoints: ((
-		master:   (1000px,  1230px),
-		medium:   (750px,   999px),
-		mini:     (null,    749px),
+		master:   		(1000px,  1600px),
+		mega:     		(860px,    999px),
+		extra:    		(760px,    859px),
+		medium:   		(550px,    759px),
+		small:   		(350px,    549px),
+		mini:     		(null,     349px),
 	));
 //Mixins.
 	/// Sets breakpoints.
