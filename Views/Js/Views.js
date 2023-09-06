@@ -1,4 +1,4 @@
-$(document).ready(function(){
+d$(document).ready(function(){
 
     //ABRIR MODAL
     $(".open_modal").click(function(){
@@ -8,6 +8,8 @@ $(document).ready(function(){
     //FECHA MODAL
     $(".modal-close").click(function(){
         $(".modal").fadeOut(400);
+        $(".modal").css("display", "none");
+
     });
 
     //ABRIR NOTIFICAÇÕES

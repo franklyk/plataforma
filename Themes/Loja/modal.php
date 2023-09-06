@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="Views/Css/Views.css">
 <article class="open_modal">
 
     <div class="open_container buyModal">

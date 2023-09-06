@@ -7,44 +7,7 @@
 </head>
 <body>
     <div class="container_top">
-        <!-- <div class="container_top_info">
-            <ul class="container_list">
-                <li>
-                    <p class="font-text-max ">
-                        <i class="fa fa-truck"></i>
-                    </p>
-                    <p class="text-center font-text-sub font-weight-medium">Frete Gratuito</p>
-                    <p class="text-center font-text-sub ">Compras a partir de R$200,00</p>
-                </li>
-                <li>
-                <p class="text-center font-text-max">
-                        <i class="fa fa-credit-card"></i>
-                    </p>
-                    </p>
-                    <p class="text-center font-text-sub font-weight-medium">Pagamento no Cartão</p>
-                    <p class="text-center font-text-sub ">Pague no Cartão de Crédito em até 12x</p>
-                </li>
-                <li>
-                <p class="text-center font-text-max">
-                        <i class="fa fa-gift"></i>
-                    </p>
-                    </p>
-                    <p class="text-center font-text-sub font-weight-medium">Ganhe Descontos nas Suas Próximas Compras</p>
-                </li>
-                <li>
-                <p class="text-center font-text-max">
-                        <i class="fa fa-phone"></i>
-                    </p>
-                    </p>
-                    <p class="text-center font-text-sub font-weight-medium">
-                        <span class="none"></span>Central de Atendimento
-                    </p>
-                    <p class="text-center font-text-sub ">Todos os Dias 24h/dia</p>
-                </li>
-            </ul>
-            <div class="clear"></div>
-        </div> -->
-        <h1 class="font-text-medium font-weight-medium">Mais vendidos da semana:</h1>
+        <h1 class="font-text-medium font-weight-medium">Promaoçôes Relâmpagos:</h1>
         <div class="container_top_info">
             <ul class="caroussel">
                 <?php for($i=0; $i < 6; $i++): ?>

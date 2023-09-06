@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <body>
     <?php
-        require "modal.php";
+        // require "modal.php";
         require "header.php";
     ?>
     <main class="container">
