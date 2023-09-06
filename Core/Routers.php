@@ -21,5 +21,5 @@
         require "{$themes}{$configUrl[1]}/{$configUrl[2]}.php";
 
     }else{
-        require 'error404.php';
+        require '404.php';
     }
