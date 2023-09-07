@@ -4,47 +4,30 @@
 
 /*header*/
 .header_bg{
-    background: $white-light;
     height: auto;
     width: 100%;
     .header_top{
-        
         align-items: center;
         display: flex;
         font-size: 1rem;
         justify-content: space-evenly;
         width: 100%;
         .truck{
-            
             padding: 5px 0;
         }
-        .socials{
-            
-            display: flex;
-            justify-content: end;
-            margin: 10px;
-            a{
-                background: $gray;
-                color: $white;
-                margin: 0 5px;
-                padding: 10px;
-                i{
-                    padding: 1px 0;
-                }
-            }
-        }
+        
     }
     .header_main{
-        
         align-items: center;
         background: $white;
         display: flex;
         font-size: 0.8rem;
         gap: 20px;
         margin: 0 auto;
+        padding-top: 50px;
         width: 80%;
         .logo{
-            
+            margin: 10px;
             width: 200px
         }
         .frm_search{
@@ -64,6 +47,21 @@
                 width: 10%;
             }
         }
+        .socials{
+            background: $white;
+            display: flex;
+            justify-content: center;
+            margin: 20px 10px;
+            a{
+                background: $gray;
+                color: $white;
+                margin: 0 5px;
+                padding: 10px;
+                i{
+                    padding: 1px 0;
+                }
+            }
+        }
         .contact_mail{
             
             padding: 0 30px;
@@ -77,6 +75,7 @@
         font-size: 0.8rem;
         margin: 0 0 30px 0;
         width: 100%;
+        
         ul{
             align-items: center;
             display: flex;
@@ -114,6 +113,7 @@
                 }
             }
         }
+        
     }
 }
 
@@ -140,11 +140,6 @@
 // Container BestSelers
 // Container TheBest
 // Container ForYou
-h1{
-    color: $gray-dark;
-    margin: 20px 30px;
-    text-decoration: underline;
-}
 .container_top{
     display: grid;
     gap: 20px;
@@ -309,57 +304,57 @@ h1{
 // max-width: 1000px;
 @include breakpoint('<master'){
 
-    /*header*/
-    .header_bg{
-        .header_main{
-            gap: 5px;
-            width: 90%;
-        }
-        .header_footer{
-            font-size: 0.7rem;
-        }
-    }
-// Container BestSelers
-// Container ForYou
-// Container TheBest
-// Container Top    
-.container_top{
-        width: 90%;
-        h1{
-            text-align: left;
-         }
-        .container_top_info{
-            .caroussel{
-                .img-caroussel{
-                    .product_desciption{
-                        .description{
-                            line-height: 1.3;
-                            text-indent: 20px;
-                        }
-                        p{
-                            color: $gray-dark;
+//     /*header*/
+//     .header_bg{
+//         .header_main{
+//             gap: 5px;
+//             width: 90%;
+//         }
+//         .header_footer{
+//             font-size: 0.7rem;
+//         }
+//     }
+// // Container BestSelers
+// // Container ForYou
+// // Container TheBest
+// // Container Top    
+// .container_top{
+//         width: 90%;
+//         h1{
+//             text-align: left;
+//          }
+//         .container_top_info{
+//             .caroussel{
+//                 .img-caroussel{
+//                     .product_desciption{
+//                         .description{
+//                             line-height: 1.3;
+//                             text-indent: 20px;
+//                         }
+//                         p{
+//                             color: $gray-dark;
                             
-                            .new_price{
-                                color: $green-dark;
-                            }
-                        }
-                        .actions{
-                            display: flex;
-                            gap: 20px;
-                            justify-content: center;
-                            margin-top: 20px;
-                            a{
-                                padding: 5px 10px;
-                                i{
-                                    font-size: 1.3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+//                             .new_price{
+//                                 color: $green-dark;
+//                             }
+//                         }
+//                         .actions{
+//                             display: flex;
+//                             gap: 20px;
+//                             justify-content: center;
+//                             margin-top: 20px;
+//                             a{
+//                                 padding: 5px 10px;
+//                                 i{
+//                                     font-size: 1.3rem;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
     //footer
 }
@@ -372,16 +367,16 @@ h1{
 // Container ForYou
 // Container TheBest
 // Container Top
-    .container_top{
-        .container_top_info{
-            .caroussel{
-                margin: auto;
-                width: 100%;
-            }
-        }
-    }
+    // .container_top{
+    //     .container_top_info{
+    //         .caroussel{
+    //             margin: auto;
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 
-    //footer
+    // //footer
 
 }
 
@@ -390,142 +385,142 @@ h1{
     /*header*/
 
     /*Container Top*/
-    .container_top{
-        .container_top_info{
-            .caroussel{
-                gap: 20px;
-                margin: auto;
-                width: 100%;
-                .img-caroussel{
-                    background: $white-light;
-                    display: flex;
-                    min-width: 90%;
-                }
-            }
-        }
-    }
+    // .container_top{
+    //     .container_top_info{
+    //         .caroussel{
+    //             gap: 20px;
+    //             margin: auto;
+    //             width: 100%;
+    //             .img-caroussel{
+    //                 background: $white-light;
+    //                 display: flex;
+    //                 min-width: 90%;
+    //             }
+    //         }
+    //     }
+    // }
 
-        //footer
-    .footer_bg{
-        .footer_main{
-            align-items: center;
-            display: flex;
-            font-size: 0.7rem;
-            flex-direction: column !important;
-            justify-content: space-evenly;
-            margin: 0 auto;
-            padding: 50px 0;
-            width: 80%;
-            ul{
-                margin: 0 auto;
-                padding: 5px 10px;
-                a{
-                    padding: 10px 15px;
-                    color: $green-dark;
-                    display: block;
-                    text-align: center;
-                    &:hover{
-                        text-decoration: underline;
-                        color: #fff;
-                    }
-                }
-                .footer_socials{
-                    display: inline-block;
-                }
-                .footer_contact{
-                    padding: 3px 0;
-                }
-            }
-            li{
-                display: block;
-                &:hover{
-                    text-decoration: underline;
-                    color: #fff;
-                }
-            }
-        }
-        .footer_down{
-            width: 100%;
-            margin: 0;
-            font-size: 0.8em;
-            background-color: $dark;
-            padding: 20px 0;
-            h1{
-                font-size: 1em;
-                font-weight: bold;
-                text-align: center;
-                color: #fff;
-            }
-            p{
-                font-size: 0.8em;
-                text-align: center;
-                color: #fff;
-            }
-        }
-    }
+    //     //footer
+    // .footer_bg{
+    //     .footer_main{
+    //         align-items: center;
+    //         display: flex;
+    //         font-size: 0.7rem;
+    //         flex-direction: column !important;
+    //         justify-content: space-evenly;
+    //         margin: 0 auto;
+    //         padding: 50px 0;
+    //         width: 80%;
+    //         ul{
+    //             margin: 0 auto;
+    //             padding: 5px 10px;
+    //             a{
+    //                 padding: 10px 15px;
+    //                 color: $green-dark;
+    //                 display: block;
+    //                 text-align: center;
+    //                 &:hover{
+    //                     text-decoration: underline;
+    //                     color: #fff;
+    //                 }
+    //             }
+    //             .footer_socials{
+    //                 display: inline-block;
+    //             }
+    //             .footer_contact{
+    //                 padding: 3px 0;
+    //             }
+    //         }
+    //         li{
+    //             display: block;
+    //             &:hover{
+    //                 text-decoration: underline;
+    //                 color: #fff;
+    //             }
+    //         }
+    //     }
+    //     .footer_down{
+    //         width: 100%;
+    //         margin: 0;
+    //         font-size: 0.8em;
+    //         background-color: $dark;
+    //         padding: 20px 0;
+    //         h1{
+    //             font-size: 1em;
+    //             font-weight: bold;
+    //             text-align: center;
+    //             color: #fff;
+    //         }
+    //         p{
+    //             font-size: 0.8em;
+    //             text-align: center;
+    //             color: #fff;
+    //         }
+    //     }
+    // }
    
 }
 //max-width: 550px;
 @include breakpoint('<medium'){
     /*header*/
-    .header_bg{
-        .header_top{
-            display: block;
-            text-align: center;
-            width: 100%;
-            .socials{
-                justify-content: center;
-            }
-        }
-        .header_main{
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 80%;
-            .logo{
-                width: 100%;
-            }
-            .frm_search{
-                flex-direction: column;
-                gap: 10px;
-                width: 100%;
-                .input_search{
-                    margin: auto;
-                    width: 90%;
-                }
-                .btn_form{
-                    margin: auto;
-                    width: 90%;
-                }
-            }
-        }
-        .header_footer{
-            width: 100%;
-            ul{
-                flex-direction: column;
-            }
-        }
-    }
-// Container BestSelers
-// Container ForYou
-// Container TheBest
-// Container Top
+//     .header_bg{
+//         .header_top{
+//             display: block;
+//             text-align: center;
+//             width: 100%;
+//             .socials{
+//                 justify-content: center;
+//             }
+//         }
+//         .header_main{
+//             display: block;
+//             margin: 0 auto;
+//             text-align: center;
+//             width: 80%;
+//             .logo{
+//                 width: 100%;
+//             }
+//             .frm_search{
+//                 flex-direction: column;
+//                 gap: 10px;
+//                 width: 100%;
+//                 .input_search{
+//                     margin: auto;
+//                     width: 90%;
+//                 }
+//                 .btn_form{
+//                     margin: auto;
+//                     width: 90%;
+//                 }
+//             }
+//         }
+//         .header_footer{
+//             width: 100%;
+//             ul{
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+// // Container BestSelers
+// // Container ForYou
+// // Container TheBest
+// // Container Top
 
-    .container_top{
-        height: auto;
-        margin: auto;
-        width: 100%;
-        .container_top_info{
-            width: 100%;
-            .caroussel{
-                width: 100%;
-                .img-caroussel{
-                    width: 100%;
-                }
-            }
-        }
-    }
-    //footer
+//     .container_top{
+//         height: auto;
+//         margin: auto;
+//         width: 100%;
+//         .container_top_info{
+//             width: 100%;
+//             .caroussel{
+//                 width: 100%;
+//                 .img-caroussel{
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+//     //footer
 
 }
 // max-width:350px;

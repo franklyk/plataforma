@@ -8,11 +8,28 @@
 <body>
     <header class="header_bg">
         <div class="header_top">
-            <p class="truck">
+            <!-- <p class="truck">
                 <i class="fa fa-truck"></i> Entregamos em todo o Brasil!
-            </p>
+            </p> -->
 
-            <p class="socials">
+            
+        </div>
+        <div class="header_main radius">
+
+            <div class="logo">
+                <a href="<?= $configBase ?> home" title="Retornar a pagina inicial">
+                    <img src="Images/General/logo.png" title="Logomarca da empresa <?= $titleSite?>" alt=" Logomarca da empresa <?= $titleSite?>">
+                </a>
+            </div>
+
+            <form action="" method="post" id="frm_search" class="frm_search">
+                    <input type="text" name="input_search" id="input_search" placeholder="Ex. Tênis Adidas" class="radius input_search"/>
+                
+                    <button type="submit" name="btn_search" id="btn_search" class="radius btn_edit btn_form">
+                        <i class="fa fa-search"></i>
+                    </button>
+            </form>
+            <div class="socials">
                 <a href="#" title="Acesse o Facebook da Loja" class=" radius ">
                     <i class="fab fa-facebook"></i>
                 </a>
@@ -25,41 +42,20 @@
                 <a href="#" title="Acesse o WatsApp da Loja" class="radius ">
                     <i class="fab fa-whatsapp"></i>
                 </a>
+                <a href="#" title="Acesse o E-mail da Loja" class="radius">
+                    <i class="fa fa-phone"></i> 
+                </a>
                 <a href="mailto: <?= $mailSite ?>" title="Acesse o E-mail da Loja" class="radius">
                     <i class="fa fa-envelope"></i> 
                 </a>
                 <a href=" <?= $configBase ?>login " title=" Faça o login e acesse seus pedidos! " class="radius">
                     <i class=" fa fa-unlock "></i>
                 </a>
-            </p>
-        </div>
-        <div class="header_main radius">
-            <div class="logo">
-                <a href="<?= $configBase ?> home" title="Retornar a pagina inicial">
-                    <img src="Images/General/logo.png" title="Logomarca da empresa <?= $titleSite?>" alt=" Logomarca da empresa <?= $titleSite?>">
-                </a>
             </div>
-            <form action="" method="post" id="frm_search" class="frm_search">
-                    <input type="text" name="input_search" id="input_search" placeholder="Ex. Tênis Adidas" class="radius input_search">
-                
-                    <button type="submit" name="btn_search" id="btn_search" class="radius btn_edit btn_form">
-                        <i class="fa fa-search"></i>
-                    </button>
-            </form>
-            <div class="contact_mail">
-                <p class="text-center mail">
-                    <i class="fa fa-envelope"></i>
-                    <?= $mailSite ?>
-
-                </p>
-                <p class="text-center phone">
-                    <i class="fa fa-phone"></i>
-                    <?= $phoneSite ?>
-                </p>
-            </div>
-            <div class="clear"></div>
+            
         </div>
         <div class="header_footer">
+            
             <ul class="navigator">
                 <a href="<?= $configBase ?>categories/ofers" title="Conheça Nossas Promoções" class="radius">
                 <li>Promoções</li>
@@ -77,6 +73,7 @@
                 </li>
                 </a>
             </ul>
+            
         </div>
     </header>
 </body>
