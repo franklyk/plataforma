@@ -70,6 +70,9 @@ ul, li {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
+.title-folder{
+    margin: 20px 10%;
+}
 /* Planos de Fundo */
 .bgcolor-red{
     background: $red;
@@ -101,6 +104,9 @@ ul, li {
 }
 .bgcolor-white-dark{
     background: $white-dark;
+}
+.bgcolor-white-light{
+    background: $white-light;
 }
 .bgcolor-yellow{
     background: $yellow;
@@ -149,7 +155,7 @@ ul, li {
 
 /* Tamanho da Fonte */
 .font-text-sub{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .font-text-min{
     font-size: 1rem;
@@ -157,7 +163,7 @@ ul, li {
 .font-text-medium{
     font-size: 1.2rem;
 }
-.font-text-medium-extra{
+.font-text-extra{
     font-size: 1.5rem;
 }
 .font-text-max{

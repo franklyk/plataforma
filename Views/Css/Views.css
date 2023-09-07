@@ -83,6 +83,10 @@ ul, li {
   -webkit-border-radius: 5px;
 }
 
+.title-folder {
+  margin: 20px 10%;
+}
+
 /* Planos de Fundo */
 .bgcolor-red {
   background: #de0c11;
@@ -122,6 +126,10 @@ ul, li {
 
 .bgcolor-white-dark {
   background: #eee;
+}
+
+.bgcolor-white-light {
+  background: #f2f2f2;
 }
 
 .bgcolor-yellow {
@@ -183,7 +191,7 @@ ul, li {
 
 /* Tamanho da Fonte */
 .font-text-sub {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .font-text-min {
@@ -194,7 +202,7 @@ ul, li {
   font-size: 1.2rem;
 }
 
-.font-text-medium-extra {
+.font-text-extra {
   font-size: 1.5rem;
 }
 
@@ -708,77 +716,91 @@ button.status-close-button {
   transform: scale(1.09);
 }
 
-.container_top {
-  height: auto;
+.container_top_info {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: space-evenly;
   margin: auto;
   width: 80%;
 }
-.container_top h1 {
+.container_top_info div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  padding: 30px;
+}
+
+h1 {
   color: #8c8989;
   margin: 20px 30px;
   text-decoration: underline;
 }
-.container_top .container_top_info {
-  width: 100%;
-}
-.container_top .container_top_info .container_list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 100%;
-}
-.container_top .container_top_info .container_list li {
-  background: #f2f2f2;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px auto;
-  width: 20%;
-  min-width: 150px;
-  text-align: center;
-}
-.container_top .container_top_info .container_list li p {
-  color: #8c8989;
-}
-.container_top .container_top_info .caroussel {
-  display: flex;
-  flex-wrap: wrap;
+
+.container_top {
+  display: grid;
   gap: 20px;
-  width: 100%;
-}
-.container_top .container_top_info .caroussel .img-caroussel {
-  background: #f2f2f2;
-  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
   margin: auto;
-  width: 46%;
+  width: 80%;
 }
-.container_top .container_top_info .caroussel .img-caroussel .price_discount {
-  color: #de0c11;
+.container_top .exposed {
+  display: grid;
+  grid-template-areas: "product_img product_title product_title" "product_img  discount_off discount_off" "product_description product_description product_description" "btn_actions prices prices";
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1%;
+  width: 100%;
 }
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption {
-  padding: 10px;
+.container_top .exposed .product_img {
+  grid-area: product_img;
+  padding: 2% 5%;
+  width: 100%;
 }
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption .description {
-  line-height: 1.3;
-  text-align: justify;
-  text-indent: 20px;
-}
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption p {
-  color: #8c8989;
-}
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption p .new_price {
-  color: #247c40;
-}
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption .actions {
-  display: flex;
-  gap: 20px;
+.container_top .exposed .product_title {
+  display: grid;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  grid-area: product_title;
+  padding: 2% 5%;
 }
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption .actions a {
-  padding: 5px 10px;
+.container_top .exposed .product_description {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: product_description;
+  padding: 2% 5%;
 }
-.container_top .container_top_info .caroussel .img-caroussel .product_desciption .actions a i {
-  font-size: 1.3rem;
+.container_top .exposed .discount_off {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: discount_off;
+  padding: 2% 5%;
+}
+.container_top .exposed .prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: prices;
+  padding: 2% 5%;
+}
+.container_top .exposed .prices span {
+  padding: 0 10px;
+}
+.container_top .exposed .btn_actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: btn_actions;
+  padding: 2% 5%;
+}
+.container_top .exposed .btn_actions a {
+  margin: 0 5%;
+  padding: 2% 5%;
 }
 
 .img_tenis {
