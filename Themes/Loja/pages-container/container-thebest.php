@@ -8,7 +8,7 @@
 <body>
     <h1 class="font-text-max font-weight-max color-blue-dark text-margin title-folder">Produtos em Destaque:</h1>
 
-    <div class="container_top ">
+    <div class="container_top radius">
 
         <?php for($i=0; $i < 6; $i++): ?>
 
@@ -16,11 +16,11 @@
 
             <img class="product_img" src="<?php $configBase ?>Images/Products/product.png" title="Imagem do produto: Tênis Adidas Sporting" alt="Imagem do produto: Tênis Adidas Sporting">
 
-            <h2 class="product_title">
+            <h2 class="product_title color-green font-text-extra">
                 Tênis Adidas Sporting
             </h2>
 
-            <p class="product_description">
+            <p class="product_description font-text-min">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam iste facere aperiam labore distinctio nemo aspernatur.
             </p>
 
@@ -35,10 +35,10 @@
             </p>
 
             <p class="btn_actions">
-                <a href="#" title="Visualize os detalhes deste produto." class="btn_datails bgcolor-blue color-white radius">
+                <a href="#" title="Visualize os detalhes deste produto." class="btn_datails bgcolor-blue color-white radius font-text-extra">
                     <i class="fa fa-images"></i>
                 </a>
-                <a class="btn_cart bgcolor-green color-white radius" href="#" title="Adicione este produto ao carrinho.">
+                <a class="btn_cart bgcolor-green color-white radius font-text-extra" href="#" title="Adicione este produto ao carrinho.">
                     <i class="fa fa-shopping-cart"></i>
                 </a>
             </p>

@@ -27,7 +27,7 @@
     margin: 0;
     outline: none;
     padding: 0;
-    transition: .1s linear;
+    transition: .1s ease-in-out;
     -moz-border-sizing: border-box;
     -webkit-border-sizing: border-box;
     -moz-border-sizing: border-box;
@@ -71,7 +71,9 @@ ul, li {
     -webkit-border-radius: 5px;
 }
 .title-folder{
-    background: $yellow;
+    background-image: linear-gradient(to right, $yellow, $red);
+    -moz-background-image: linear-gradient(to right, $yellow, transparent);
+    -webkit-background-image: linear-gradient(to right, $yellow, transparent);
     margin: 50px 10%;
 }
 /* Planos de Fundo */
@@ -170,9 +172,18 @@ ul, li {
 .font-text-max{
     font-size: 2rem;
 }
-@media(max-width: 900px){
+@media(max-width: 1000px){
     .font-text-max{
         font-size: 1.8rem;
+    }
+    .font-text-extra{
+        font-size: 1.2rem;
+    }
+    .font-text-medium{
+        font-size: 1rem;
+    }
+    .font-text-min{
+        font-size: 0.8rem;
     }
 }
 @media(max-width: 600px){
@@ -185,7 +196,7 @@ ul, li {
     .font-text-medium{
         font-size: 1rem;
     }
-    .font-text-medium-extra{
+    .font-text-extra{
         font-size: 1.2rem;
     }
     .font-text-max{
@@ -261,7 +272,7 @@ ul, li {
     padding: 1% 2%;
 }
 .btn_edit:hover{
-    background: $dark;
+    background: $green-dark;
 }
 .btn_new:hover{
     background: $dark;

@@ -1,94 +1,59 @@
-<?php
-require 'header.php';
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Views/Css/Views.css">
+</head>
+<body>
+    <?php
+    // require 'config.php';
+    ?>
+    <!-- <div class="result"></div> -->
+    <div class="blur"></div>
+    <fieldset class="camp_form_register">
 
-<div class="result"></div>
-
-<main class="container">
-    <div class="container_controller bgcolor-gray">
-        <div class="container_details">
-            <p class="paragraph_navigator">
-                <a href="<?= $configBase?>index" title="Retornar a página inicial" class="color-white">
-                    <i class="fa fa-home"></i>Home
-                </a>/ Login
-            </p>
+        <legend><img src="<?php $configBase ?>Images/General/logo.png" alt=""></legend>
+        <div class="header_register">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="close_register">
+            <span class="line1"></span>
+            <span class="line2"></span>
         </div>
-    </div>
+        </div>
+        <form action="" method="post" class="camp_register">
 
-    <section class="container_main">
-        <div class="container_controller">
-            <div class="container_details">
-                <!--Login-->
-                <div class="divisor2">
-                    <div class="main_login">
-                        <h1 class="text-center main_login_h1">Já Sou Cliente</h1>
-
-                        <form method="post" id="form_login">
-                            <label for="login_email">E-mail: </label>
-                            <input type="email" name="login_email" id="login_email" value="" required>
-
-                            <div class="viewer">
-                                <label for="login_password">Senha: </label>
-                                <input type="password" name="login_password" id="login_password" value="" required>
-                                <span class="showHide">
-                                    <i class="fa fa-eye" aria-hidden="true"></i>
-                                </span>
-                            </div>
-
-                            <div class="main_login_btns">
-                                <div class="divisor2">
-                                    <button class="btn_edit radius" id="btn_login" name="btn_login">
-                                        <i class="fa fa-sign-in-alt"></i> Entrar
-                                    </button>
-                                </div>
-
-                                <div class="divisor2 text-right m-text-center">
-                                    <a href="<?= $configBase?>recovery" id="btn_recovery"
-                                       title="Recuperar Senha" class="color-dark font-text-sub radius">
-                                        Esqueci Senha
-                                    </a>
-                                </div>
-
-                                <div class="clear"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!--Cadastro-->
-                <div class="divisor2">
-                    <div class="main_login">
-                        <h1 class="text-center main_login_h1">Quero Me Cadastrar</h1>
-
-                        <form method="post" id="form_register">
-                            <label for="user_name">Nome Completo: </label>
-                            <input type="text" name="user_name" id="user_name" required>
-
-                            <label for="user_email">E-mail: </label>
-                            <input type="email" name="user_email" id="user_email" required>
-
-                            <label for="user_pass">Senha: </label>
-                            <input type="password" name="user_pass" id="user_pass" required>
-
-                            <div class="main_login_btns">
-                                <button class="btn_new radius" id="btn_register" name="btn_register">
-                                    <i class="fa fa-user-plus"></i> Criar Conta
-                                </button>
-                            </div>
-
-                                <div class="clear"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            <?php require 'pages-container/container-bestsellers.php'; ?>
-            <?php require 'pages-container/container-thebest.php'; ?>
+            <div class="input_firstname div_input">
+                <input type="text" class="user_firstname" name="user_firstname" id="user_firstname" required>
+                <label for="user_firstname">Nome:</label>
             </div>
-        </div>
-    </section>
-</main>
+            <div class="input_lastname div_input">
+                <input type="text" class="user_lastname" name="user_lastname" id="user_lastname" required>
+                <label for="user_lastname">Sobrenome</label>
+            </div>
 
-<?php
-require 'footer.php';
-?>
+            <div class="input_phone div_input">
+                <input type="text" class="user_phone" name="user_phone" id="user_phone" required>
+                <label for="user_phone">Telefone</label>
+            </div>
+            <div class="input_nasc div_input">
+                <input type="text" class="user_phone" name="user_nasc" id="user_nasc" required>
+                <label for="user_nasc">Nascimento</label>
+            </div>
+            <div class="input_email div_input">
+                <input type="email" class="user_email" name="user_email" id="user_email" required>
+                <label for="user_email">E-mail: </label>
+            </div>
+            <div class="input_pass div_input">
+                <input type="password" class="user_pass" name="user_pass" id="user_pass" required>
+                <label for="user_pass">Senha:</label>
+                <span class="showHide">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
+            </div>
+            <button type="submit" id="btn_register" class="btn_register" name="btn_register" value="submit"> <i class="fa fa-sign-in-alt"></i> Cadastrar </button>
+    
+        </form>
+    </fieldset>
+</body>
+</html>

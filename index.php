@@ -29,11 +29,11 @@
 
     <!-- TWITTER -->
     <meta property="twitter:card" content="sumary_large_image">
-    <meta property="twitter:domain" content="<?= $configbase ?>">
+    <meta property="twitter:domain" content="<?= $configBase ?>">
     <meta property="twitter:title" content="<?= $titleSite ?>">
     <meta property="twitter:description" content="<?= $description ?>">
     <meta property="twitter:image" content="<?= $imageSite ?>">
-    <meta property="twitter:BASE" content="<?= $configbase ?>/<?= $imageSite ?>">
+    <meta property="twitter:BASE" content="<?= $configBase ?>/<?= $imageSite ?>">
 
     <!-- FONTAWELSOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
