@@ -1,6 +1,4 @@
-<?php
-require 'header.php';
-?>
+
 
     <div class="result"></div>
 
@@ -82,14 +80,7 @@ require 'header.php';
                         </form>
                     </div>
                 </div>
-
-                <?php require 'pages-container/container-bestsellers.php'; ?>
-                <?php require 'pages-container/container-thebest.php'; ?>
             </div>
             </div>
         </section>
     </main>
-
-<?php
-require 'footer.php';
-?>

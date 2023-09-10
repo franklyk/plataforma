@@ -1,10 +1,10 @@
 <?php
-require 'address.php';
-require 'header.php';
+// require 'address.php';
+// require 'header.php';
 ?>
 
 <main class="container">
-    <div class="container_controller bgcolor-gray">
+    <!-- <div class="container_controller bgcolor-gray">
         <div class="container_details">
             <p class="paragraph_navigator">
                 <a href="<?= $configBase?>index" title="Retornar a página inicial" class="color-white">
@@ -12,7 +12,7 @@ require 'header.php';
                 </a> / Checklist
             </p>
         </div>
-    </div>
+    </div> -->
 
     <section class="container_main">
         <div class="container_controller">
@@ -46,7 +46,7 @@ require 'header.php';
             </div>
             <?php endfor; ?>
 
-            <div class="clear"></div>
+            <!-- <div class="clear"></div> -->
 
             <div class="container_cart">
                 <table class="table">
@@ -70,7 +70,7 @@ require 'header.php';
 
                             <td class="td_sub">
                                 <form method="post" id="form_cart">
-                                    <input type="number" id="input_cart" name="input_cart" value="1" class="radius"
+                                    <input type="number" id="input_cart" name="input_cart" value="1" class="radius">
                                 </form>
                             </td>
 
@@ -136,11 +136,13 @@ require 'header.php';
 
 
                 </table>
-                <div class="clear"></div>
+                <!-- <div class="clear"></div> -->
             </div>
         </div>
 
     </section>
 </main>
 
-<?php require_once 'footer.php'; ?>
+    <?php 
+        // require_once 'footer.php'; 
+    ?>

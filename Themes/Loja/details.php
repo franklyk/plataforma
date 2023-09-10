@@ -1,17 +1,6 @@
-<?php
-    require 'header.php';
-?>
+
 
 <main class="container">
-    <div class="container_controller bgcolor-gray">
-        <div class="container_details">
-            <p class="paragraph_navigator">
-                <a href="<?= $configBase?>index" title="Retornar a página inicial" class="color-white">
-                    <i class="fa fa-home"></i>Home
-                </a> / Produto
-            </p>
-        </div>
-    </div>
 
     <section class="container_main">
         <div class="container_controller">
@@ -191,12 +180,7 @@
                     </div>
                 </div>
             </div>
-            <?php require 'pages-container/container-bestsellers.php'; ?>
-            <?php require 'pages-container/container-thebest.php'; ?>
         </div>
 
     </section>
 </main>
-<?php
-require 'footer.php';
-?>

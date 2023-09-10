@@ -721,20 +721,20 @@ button.status-close-button {
 }
 
 .blur {
+  opacity: 1;
+  top: -100%;
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   left: 0;
   position: fixed;
-  opacity: 0;
-  top: -100%;
-  width: 100%;
   z-index: 5;
 }
 
 .camp_form_register {
   opacity: 0;
-  top: -100%;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
   background: #f2f2f2;
   border: 1px solid #00ff03;
   height: 80%;
@@ -743,7 +743,6 @@ button.status-close-button {
   padding: 0 30px 30px 30px;
   position: fixed;
   top: 50%;
-  transform: translate(-50%, -50%);
   width: 70%;
   z-index: 6;
 }

@@ -1,5 +1,20 @@
 d$(document).ready(function(){
 
+    
+    $("#btn_register").click(function(){
+        
+        $(".camp_form_register").css("opacity: 1");
+    });
+        // $(".blur").css("top: 0");
+
+
+
+        // $(".camp_form_register").css("opacity: 0;
+        // pointer-events: none;
+        // transform: translate(-50%, -100%);
+        // $(".blur").css("top: 0");
+
+    })
     //ABRIR MODAL
     $(".open_modal").click(function(){
         $(".modal").fadeIn(400);

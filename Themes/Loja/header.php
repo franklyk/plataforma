@@ -41,9 +41,10 @@
                 <a href="mailto: <?= $mailSite ?>" title="Acesse o E-mail da Loja" class="radius btn_edit font-text-medium">
                     <i class="fa fa-envelope"></i> 
                 </a>
-                <a href=" <?= $configBase ?>login " title=" Faça o login e acesse seus pedidos! " class="radius btn_edit font-text-medium">
+                <button type="submit" title=" Faça o login e acesse seus pedidos! " id="btn_register" class="radius btn_edit font-text-medium" value="login">
                     <i class=" fa fa-unlock "></i>
-                </a>
+                    Login
+                </button>
             </div>
             
         </div>
